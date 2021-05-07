@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".TreningiActivity">
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button"
         android:layout_width="335dp"
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
-        android:text="Plan ćwiczeń"
+        android:text="Ramiona"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,23 +19,11 @@
         app:layout_constraintVertical_bias="0.502" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/button2"
         android:layout_width="335dp"
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
-        android:text="Ustawienia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="335dp"
-        android:layout_height="76dp"
-        android:background="@drawable/mybutton1"
-        android:text="Treningi"
+        android:text="Nogi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,15 +31,39 @@
         app:layout_constraintVertical_bias="0.684" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/button3"
         android:layout_width="335dp"
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
-        android:text="Raport"
+        android:text="Barki i Plecy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="335dp"
+        android:layout_height="76dp"
+        android:background="@drawable/mybutton1"
+        android:text="Klatka piersiowa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="335dp"
+        android:layout_height="76dp"
+        android:background="@drawable/mybutton1"
+        android:text="Mięśnie brzucha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

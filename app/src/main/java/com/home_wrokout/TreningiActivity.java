@@ -7,24 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class TreningiActivity extends AppCompatActivity {
     private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_treningi);
 
-        button=findViewById(R.id.button12);
+        button=findViewById(R.id.button5);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-               openTreningiActivity();
-            }
+            public void onClick(View v) {openBrzuchPozActivity();}
         });
+
     }
-    public void openTreningiActivity(){
-        Intent intent = new Intent(this, TreningiActivity.class);
+    public void openBrzuchPozActivity(){
+        Intent intent = new Intent(this, BrzuchPozActivity.class);
         startActivity(intent);
     }
 }

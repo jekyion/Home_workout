@@ -4,38 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".BrzuchPozActivity">
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button6"
         android:layout_width="335dp"
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
-        android:text="Plan ćwiczeń"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="335dp"
-        android:layout_height="76dp"
-        android:background="@drawable/mybutton1"
-        android:text="Ustawienia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="335dp"
-        android:layout_height="76dp"
-        android:background="@drawable/mybutton1"
-        android:text="Treningi"
+        android:text="Mięśnie Brzucha \n Zaawansowany"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,11 +19,23 @@
         app:layout_constraintVertical_bias="0.684" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/button7"
         android:layout_width="335dp"
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
-        android:text="Raport"
+        android:text="Mięśnie Brzucha \n Średnio Zaawansowany"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="335dp"
+        android:layout_height="76dp"
+        android:background="@drawable/mybutton1"
+        android:text="Mięśnie Brzucha \n Początkujący"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
