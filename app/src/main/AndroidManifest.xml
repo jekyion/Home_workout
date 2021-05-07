@@ -12,7 +12,9 @@
         <activity android:name=".ExTimerActivity"></activity>
         <activity android:name=".BrzuchPozActivity" />
         <activity android:name=".TreningiActivity" />
+        <activity android:name=".Alarm_RecyclerView.Alarm_activity"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
