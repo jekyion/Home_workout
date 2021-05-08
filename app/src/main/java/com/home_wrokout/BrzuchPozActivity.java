@@ -8,14 +8,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+
 public class BrzuchPozActivity extends AppCompatActivity {
     private Button pocz;
     private Button sred;
     private Button zaw;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_brzuch_poz);
+
+
 
         pocz=findViewById(R.id.button8);
         pocz.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +48,7 @@ public class BrzuchPozActivity extends AppCompatActivity {
     }
     public void openExTimerActivity(){
         Intent intent = new Intent(this, ExTimerActivity.class);
+
         startActivity(intent);
     }
 }
