@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homewrokout">
-        <activity android:name=".ExTimerActivity"></activity>
+        <activity android:name=".Alarm_RecyclerView.Alarm_add_activity"></activity>
+        <activity android:name=".ExTimerActivity" />
         <activity android:name=".BrzuchPozActivity" />
         <activity android:name=".TreningiActivity" />
-        <activity android:name=".Alarm_RecyclerView.Alarm_activity"/>
+        <activity android:name=".Alarm_RecyclerView.Alarm_activity" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
