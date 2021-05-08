@@ -42,15 +42,20 @@ public class ExTimerActivity extends AppCompatActivity {
                 timer.setText("" + millisUntilFinished / 1000);
             }
             public void onFinish() {
-                if(i<5) {
+
                     if (isBreak) {
 
                         isBreak = false;
                         exc.setTextSize(36);
-                        exc.setText("Przerwa, następne ćwiczenie: " + cwp[i + 1]);
-                        iv.setImageResource(images[i + 1]);
-                        i++;
-                        startTimer(2000);
+                        if (i== cwp.length-1){
+                            exc.setText("Koniec");
+                            openBrzuchPozActivity();
+                        }else {
+                            exc.setText("Przerwa, następne ćwiczenie: " + cwp[i + 1]);
+                            iv.setImageResource(images[i + 1]);
+                            i++;
+                            startTimer(2000);
+                        }
 
 
                     } else {
@@ -60,10 +65,6 @@ public class ExTimerActivity extends AppCompatActivity {
                         startTimer(3000);
 
                     }
-                }else{
-                    exc.setText("Koniec");
-                    openBrzuchPozActivity();
-                }
 
             }
 
