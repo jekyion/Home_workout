@@ -70,10 +70,14 @@ public class ExTimerActivity extends AppCompatActivity {
 
         };
         cTimer.start();
+        ;
     }
     public void openBrzuchPozActivity(){
         Intent intent = new Intent(this, BrzuchPozActivity.class);
         startActivity(intent);
     }
-
+    protected void onStop() {
+        super.onStop();  // Always call the superclass method first
+        cTimer.cancel();
+    }
 }
