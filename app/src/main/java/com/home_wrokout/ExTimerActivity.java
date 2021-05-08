@@ -57,7 +57,6 @@ public class ExTimerActivity extends AppCompatActivity {
                         isBreak = true;
                         exc.setText(cwp[i]);
                         iv.setImageResource(images[i]);
-                        i++;
                         startTimer(3000);
 
                     }
