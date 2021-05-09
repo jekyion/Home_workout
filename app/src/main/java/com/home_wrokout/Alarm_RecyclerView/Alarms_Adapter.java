@@ -69,7 +69,7 @@ public class Alarms_Adapter extends RecyclerView.Adapter<Alarms_Adapter.AlarmsVi
     public void onBindViewHolder(@NonNull @org.jetbrains.annotations.NotNull Alarms_Adapter.AlarmsViewHolder holder, int position) {
         RecyclerView_Item currentItem = mArrayList.get(position);
 
-        holder.textViewHour.setText(currentItem.getHour());
+        holder.textViewHour.setText(currentItem.getTime());
         holder.textViewDaysOfWeek.setText(currentItem.getDays_of_week());
 
     }

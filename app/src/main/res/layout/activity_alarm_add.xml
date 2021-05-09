@@ -6,4 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".Alarm_RecyclerView.Alarm_add_activity">
 
+    <Button
+        android:id="@+id/button_chose_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Wybiersz godzine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_godzina" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Wybierz dni tygodnia:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_chose_time" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="199dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <CheckBox
+            android:id="@+id/checkBox_pon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ponidzałek" />
+
+        <CheckBox
+            android:id="@+id/checkBox_wt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wtorek" />
+
+        <CheckBox
+            android:id="@+id/checkBox_sr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Środa" />
+
+        <CheckBox
+            android:id="@+id/checkBox_czw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Czwartek" />
+
+        <CheckBox
+            android:id="@+id/checkBox_ptk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piątek" />
+
+        <CheckBox
+            android:id="@+id/checkBox_sob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sobota" />
+
+        <CheckBox
+            android:id="@+id/checkBox_nd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Niedziela" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_godzina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Nie wybarno godziny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_Ustaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ustaw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
