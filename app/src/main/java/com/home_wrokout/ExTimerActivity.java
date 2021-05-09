@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class ExTimerActivity extends AppCompatActivity {
@@ -19,8 +20,9 @@ public class ExTimerActivity extends AppCompatActivity {
     private boolean isBreak=true;
     CountDownTimer cTimer = null;
     private int i=0;
+    ArrayList<String> cwp;
 
-    String[] cwp={"1","2","3","4","5"};
+    //String[] cwp=b.getStringArray("cwp");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +31,9 @@ public class ExTimerActivity extends AppCompatActivity {
         iv= findViewById(R.id.imageView3);
         timer = findViewById(R.id.textView);
         exc = findViewById(R.id.textView2);
+        cwp = getIntent().getStringArrayListExtra("cwp");
         iv.setImageResource(images[0]);
-        exc.setText(cwp[0]);
+        exc.setText(cwp.get(0));
         startTimer(3000);
 
     }
@@ -47,11 +50,11 @@ public class ExTimerActivity extends AppCompatActivity {
 
                         isBreak = false;
                         exc.setTextSize(36);
-                        if (i== cwp.length-1){
+                        if (i== (cwp.size())-1){
                             exc.setText("Koniec");
                             openBrzuchPozActivity();
                         }else {
-                            exc.setText("Przerwa, następne ćwiczenie: " + cwp[i + 1]);
+                            exc.setText("Przerwa, następne ćwiczenie: " + cwp.get(i + 1));
                             iv.setImageResource(images[i + 1]);
                             i++;
                             startTimer(2000);
@@ -60,7 +63,7 @@ public class ExTimerActivity extends AppCompatActivity {
 
                     } else {
                         isBreak = true;
-                        exc.setText(cwp[i]);
+                        exc.setText(cwp.get(i));
                         iv.setImageResource(images[i]);
                         startTimer(3000);
 
