@@ -22,14 +22,23 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <ImageView
+        <ToggleButton
+            android:button="@android:transition/slide_right"
+            android:id="@+id/icon_slider"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="35dp" />
+
+<!--        <ImageView
             android:id="@+id/icon_slider"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginBottom="35dp"
-            android:src="@drawable/ic_switch_icon" />
+            android:src="@drawable/ic_switch_icon" />-->
 
         <TextView
             android:id="@+id/text_powtarzanie"

@@ -27,7 +27,7 @@ public class Alarm_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
 
-        createExampleAlarmlist();
+        createExampleAlarmList();
         createAlarmRecyclerView();
 
         buttonAddItem = findViewById(R.id.button_add_alarm_item);
@@ -46,12 +46,7 @@ public class Alarm_activity extends AppCompatActivity {
         mAdapter.notifyItemInserted(position);
     }
 
-    public void removeAlarmItem(int position){
-        alarmList.remove(position);
-        mAdapter.notifyItemRemoved(position);
-    }
-
-    public void createExampleAlarmlist(){
+    public void createExampleAlarmList(){
         alarmList = new ArrayList<>();
         alarmList.add(new RecyclerView_Item("9:00","pn, wt, sr"));
         alarmList.add(new RecyclerView_Item("23:00","sob, nd"));
