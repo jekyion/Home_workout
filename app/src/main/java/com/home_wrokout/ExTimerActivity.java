@@ -18,10 +18,10 @@ public class ExTimerActivity extends AppCompatActivity {
     private ImageView iv;
    // int images[]={R.drawable.pushup,R.drawable.mountainclimber,R.drawable.fire,R.drawable.fire,R.drawable.fire};
     private boolean isBreak=true;
-    CountDownTimer cTimer = null;
+    private CountDownTimer cTimer = null;
     private int i=0;
-    ArrayList<String> cwp;
-    ArrayList<Integer> icp;
+    private ArrayList<String> cwp;
+    private ArrayList<Integer> icp;
 
     //String[] cwp=b.getStringArray("cwp");
 
