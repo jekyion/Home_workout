@@ -16,8 +16,8 @@ public class BrzuchPozActivity extends AppCompatActivity {
     private Button sred;
     private Button zaw;
    // String[] cwp={"1","2","3","4","5"};
-    ArrayList<String> cwp = new ArrayList<String>();
-    ArrayList<Integer> icp = new ArrayList<>();
+    private ArrayList<String> cwp = new ArrayList<String>();
+    private ArrayList<Integer> icp = new ArrayList<>();
 
 
 
