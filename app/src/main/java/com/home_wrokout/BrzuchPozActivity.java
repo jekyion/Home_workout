@@ -67,15 +67,15 @@ public class BrzuchPozActivity extends AppCompatActivity {
     }
     public void listAddPocz(){
         cwp.clear();
+        cwp.add("JUMPING JACKS");
         cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("");
         cwp.add("MOUNTAIN CLIMBER");
         cwp.add("HEEL TOUCH");
         cwp.add("PLANK");
 
         icp.clear();
+        icp.add(R.drawable.jumpingjacks);
         icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.fire);
         icp.add(R.drawable.mountainclimber);
         icp.add(R.drawable.heeltouch);
         icp.add(R.drawable.plank);
@@ -84,29 +84,29 @@ public class BrzuchPozActivity extends AppCompatActivity {
         cwp.clear();
         cwp.add("HEEL TOUCH");
         cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("V-UP");
+        cwp.add("LEG RAISES");
         cwp.add("BUTT BRIDGE");
         cwp.add("PLANK");
 
         icp.clear();
         icp.add(R.drawable.heeltouch);
         icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.fire);
+        icp.add(R.drawable.legraises);
         icp.add(R.drawable.buttbridge);
         icp.add(R.drawable.plank);
     }
     public void listAddZaw(){
         cwp.clear();
         cwp.add("SIT-UPS");
-        cwp.add("");
-        cwp.add("");
+        cwp.add("COBRA STRETCH");
+        cwp.add("BICYCLE CRUNCHES");
         cwp.add("ABDOMINAL CRUNCHES");
         cwp.add("PLANK");
 
         icp.clear();
         icp.add(R.drawable.situp);
-        icp.add(R.drawable.fire);
-        icp.add(R.drawable.fire);
+        icp.add(R.drawable.cobrastretch);
+        icp.add(R.drawable.bicyclecrunches);
         icp.add(R.drawable.abdominalcrunches);
         icp.add(R.drawable.plank);
     }
