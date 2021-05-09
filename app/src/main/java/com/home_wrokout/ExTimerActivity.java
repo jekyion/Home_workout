@@ -16,11 +16,12 @@ public class ExTimerActivity extends AppCompatActivity {
     private TextView timer;
     private TextView exc;
     private ImageView iv;
-    int images[]={R.drawable.pushup,R.drawable.pushup,R.drawable.fire,R.drawable.fire,R.drawable.fire};
+   // int images[]={R.drawable.pushup,R.drawable.mountainclimber,R.drawable.fire,R.drawable.fire,R.drawable.fire};
     private boolean isBreak=true;
     CountDownTimer cTimer = null;
     private int i=0;
     ArrayList<String> cwp;
+    ArrayList<Integer> icp;
 
     //String[] cwp=b.getStringArray("cwp");
 
@@ -32,7 +33,8 @@ public class ExTimerActivity extends AppCompatActivity {
         timer = findViewById(R.id.textView);
         exc = findViewById(R.id.textView2);
         cwp = getIntent().getStringArrayListExtra("cwp");
-        iv.setImageResource(images[0]);
+        icp = getIntent().getIntegerArrayListExtra("icp");
+        iv.setImageResource(icp.get(0));
         exc.setText(cwp.get(0));
         startTimer(3000);
 
@@ -55,7 +57,7 @@ public class ExTimerActivity extends AppCompatActivity {
                             openBrzuchPozActivity();
                         }else {
                             exc.setText("Przerwa, następne ćwiczenie: " + cwp.get(i + 1));
-                            iv.setImageResource(images[i + 1]);
+                            iv.setImageResource(icp.get(i + 1));
                             i++;
                             startTimer(2000);
                         }
@@ -64,7 +66,7 @@ public class ExTimerActivity extends AppCompatActivity {
                     } else {
                         isBreak = true;
                         exc.setText(cwp.get(i));
-                        iv.setImageResource(images[i]);
+                        iv.setImageResource(icp.get(i));
                         startTimer(3000);
 
                     }

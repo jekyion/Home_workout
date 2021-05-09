@@ -17,6 +17,7 @@ public class BrzuchPozActivity extends AppCompatActivity {
     private Button zaw;
    // String[] cwp={"1","2","3","4","5"};
     ArrayList<String> cwp = new ArrayList<String>();
+    ArrayList<Integer> icp = new ArrayList<>();
 
 
 
@@ -56,18 +57,28 @@ public class BrzuchPozActivity extends AppCompatActivity {
     }
     public void openExTimerActivity(){
         Bundle b=new Bundle();
+        Bundle c=new Bundle();
         b.putStringArrayList("cwp",cwp);
+        c.putIntegerArrayList("icp",icp);
         Intent i = new Intent(this, ExTimerActivity.class);
         i.putExtras(b);
+        i.putExtras(c);
         startActivity(i);
     }
     public void listAddPocz(){
         cwp.clear();
         cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("RUSSIAN TWIST");
+        cwp.add("");
         cwp.add("MOUNTAIN CLIMBER");
         cwp.add("HEEL TOUCH");
         cwp.add("PLANK");
+
+        icp.clear();
+        icp.add(R.drawable.abdominalcrunches);
+        icp.add(R.drawable.fire);
+        icp.add(R.drawable.mountainclimber);
+        icp.add(R.drawable.heeltouch);
+        icp.add(R.drawable.plank);
     }
     public void listAddSred(){
         cwp.clear();
@@ -76,13 +87,27 @@ public class BrzuchPozActivity extends AppCompatActivity {
         cwp.add("V-UP");
         cwp.add("BUTT BRIDGE");
         cwp.add("PLANK");
+
+        icp.clear();
+        icp.add(R.drawable.heeltouch);
+        icp.add(R.drawable.mountainclimber);
+        icp.add(R.drawable.fire);
+        icp.add(R.drawable.buttbridge);
+        icp.add(R.drawable.plank);
     }
     public void listAddZaw(){
         cwp.clear();
         cwp.add("SIT-UPS");
-        cwp.add("SIDE BRIDGE LEFT");
-        cwp.add("SIDE BRIDGE RIGHT");
+        cwp.add("");
+        cwp.add("");
         cwp.add("ABDOMINAL CRUNCHES");
         cwp.add("PLANK");
+
+        icp.clear();
+        icp.add(R.drawable.situp);
+        icp.add(R.drawable.fire);
+        icp.add(R.drawable.fire);
+        icp.add(R.drawable.abdominalcrunches);
+        icp.add(R.drawable.plank);
     }
 }
