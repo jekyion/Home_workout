@@ -36,7 +36,7 @@ public class ExTimerActivity extends AppCompatActivity {
         icp = getIntent().getIntegerArrayListExtra("icp");
         iv.setImageResource(icp.get(0));
         exc.setText(cwp.get(0));
-        startTimer(3000);
+        startTimer(30000);
 
     }
 
@@ -59,7 +59,7 @@ public class ExTimerActivity extends AppCompatActivity {
                             exc.setText("Przerwa, następne ćwiczenie: " + cwp.get(i + 1));
                             iv.setImageResource(icp.get(i + 1));
                             i++;
-                            startTimer(2000);
+                            startTimer(15000);
                         }
 
 
@@ -67,7 +67,7 @@ public class ExTimerActivity extends AppCompatActivity {
                         isBreak = true;
                         exc.setText(cwp.get(i));
                         iv.setImageResource(icp.get(i));
-                        startTimer(3000);
+                        startTimer(30000);
 
                     }
 
