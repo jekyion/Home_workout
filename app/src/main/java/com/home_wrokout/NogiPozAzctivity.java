@@ -67,46 +67,81 @@ public class NogiPozAzctivity extends AppCompatActivity {
     public void listAddPocz(){
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("HEEL TOUCH");
-        cwp.add("PLANK");
+        cwp.add("SQUATS");
+        cwp.add("SQUATS");
+        cwp.add("BACKWARD LUNGE");
+        cwp.add("DONKEY KICKS LEFT");
+        cwp.add("DONKEY KICKS RIGHT");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.heeltouch);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.squats);
+        icp.add(R.drawable.squats);
+        icp.add(R.drawable.backward_lunge);
+        icp.add(R.drawable.donkey_kicks);
+        icp.add(R.drawable.donkey_kicks);
     }
     public void listAddSred(){
         cwp.clear();
-        cwp.add("HEEL TOUCH");
-        cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("LEG RAISES");
-        cwp.add("BUTT BRIDGE");
-        cwp.add("PLANK");
+        cwp.add("JUMPING JACKS");
+        cwp.add("SQUATS");
+        cwp.add("SQUATS");
+        cwp.add("BACKWARD LUNGE");
+        cwp.add("BACKWARD LUNGE");
+        cwp.add("SIDE LEG CIRCLES LEFT");
+        cwp.add("SIDE LEG CIRCLES RIGHT");
+        cwp.add("SUMO SQUAT");
+        cwp.add("SUMO SQUAT");
+        cwp.add("WALL SIT");
 
         icp.clear();
-        icp.add(R.drawable.heeltouch);
-        icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.legraises);
-        icp.add(R.drawable.buttbridge);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.jumpingjacks);
+        icp.add(R.drawable.squats);
+        icp.add(R.drawable.squats);
+        icp.add(R.drawable.backward_lunge);
+        icp.add(R.drawable.backward_lunge);
+        icp.add(R.drawable.leg_circles);
+        icp.add(R.drawable.leg_circles);
+        icp.add(R.drawable.sumo_squat);
+        icp.add(R.drawable.sumo_squat);
+        icp.add(R.drawable.wall_sit);
     }
     public void listAddZaw(){
         cwp.clear();
-        cwp.add("SIT-UPS");
-        cwp.add("COBRA STRETCH");
-        cwp.add("BICYCLE CRUNCHES");
-        cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("PLANK");
+        cwp.add("JUMPING JACKS");
+        cwp.add("BURPEES");
+        cwp.add("SQUATS");
+        cwp.add("SQUATS");
+        cwp.add("BACKWARD LUNGE");
+        cwp.add("BACKWARD LUNGE");
+        cwp.add("SIDE LEG CIRCLES LEFT");
+        cwp.add("SIDE LEG CIRCLES RIGHT");
+        cwp.add("SIDE LEG CIRCLES LEFT");
+        cwp.add("SIDE LEG CIRCLES RIGHT");
+        cwp.add("JUMPING SQUATS");
+        cwp.add("JUMPING SQUATS");
+        cwp.add("SUMO SQUAT");
+        cwp.add("SUMO SQUAT");
+        cwp.add("QUAD STRETCH");
+        cwp.add("WALL SIT");
 
         icp.clear();
-        icp.add(R.drawable.situp);
-        icp.add(R.drawable.cobrastretch);
-        icp.add(R.drawable.bicyclecrunches);
-        icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.jumpingjacks);
+        icp.add(R.drawable.burpees);
+        icp.add(R.drawable.squats);
+        icp.add(R.drawable.squats);
+        icp.add(R.drawable.backward_lunge);
+        icp.add(R.drawable.backward_lunge);
+        icp.add(R.drawable.leg_circles);
+        icp.add(R.drawable.leg_circles);
+        icp.add(R.drawable.leg_circles);
+        icp.add(R.drawable.leg_circles);
+        icp.add(R.drawable.jumping_squats);
+        icp.add(R.drawable.jumping_squats);
+        icp.add(R.drawable.sumo_squat);
+        icp.add(R.drawable.sumo_squat);
+        icp.add(R.drawable.quad_stretch);
+        icp.add(R.drawable.wall_sit);
+
     }
 }

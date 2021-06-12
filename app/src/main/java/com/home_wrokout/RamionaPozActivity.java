@@ -67,46 +67,62 @@ public class RamionaPozActivity extends AppCompatActivity {
     public void listAddPocz(){
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("HEEL TOUCH");
-        cwp.add("PLANK");
+        cwp.add("ARM RAISES");
+        cwp.add("DIAMOND PUSH-UPS");
+        cwp.add("PUNCHES");
+        cwp.add("WALL PUSH_UPS");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.heeltouch);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.arm_raises);
+        icp.add(R.drawable.diamond_push_up);
+        icp.add(R.drawable.punches);
+        icp.add(R.drawable.wall_push_up);
     }
     public void listAddSred(){
         cwp.clear();
-        cwp.add("HEEL TOUCH");
-        cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("LEG RAISES");
-        cwp.add("BUTT BRIDGE");
-        cwp.add("PLANK");
+        cwp.add("JUMPING JACKS");
+        cwp.add("PUSH-UPS");
+        cwp.add("PUSH UPS & ROTATION");
+        cwp.add("DIAMOND PUSH_UPS");
+        cwp.add("BURPEES");
+        cwp.add("PUSH-UPS");
+        cwp.add("ARM SCISSORS");
 
         icp.clear();
-        icp.add(R.drawable.heeltouch);
-        icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.legraises);
-        icp.add(R.drawable.buttbridge);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.jumpingjacks);
+        icp.add(R.drawable.pushup);
+        icp.add(R.drawable.pushup_rotation);
+        icp.add(R.drawable.diamond_push_up);
+        icp.add(R.drawable.burpees);
+        icp.add(R.drawable.pushup);
+        icp.add(R.drawable.arm_scissors);
     }
     public void listAddZaw(){
         cwp.clear();
-        cwp.add("SIT-UPS");
-        cwp.add("COBRA STRETCH");
-        cwp.add("BICYCLE CRUNCHES");
-        cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("PLANK");
+        cwp.add("JUMPING JACKS");
+        cwp.add("SKIPPING WITHOUT ROPE");
+        cwp.add("BURPESS");
+        cwp.add("PUSH-UPS");
+        cwp.add("PUSH UPS & ROTATION");
+        cwp.add("TRICEPS STRETCH LEFT");
+        cwp.add("TRICEPS STRETCH RIGHT");
+        cwp.add("BURPESS");
+        cwp.add("PUSH UPS & ROTATION");
+        cwp.add("PUNCHES");
+        cwp.add("ARM RAISES");
 
         icp.clear();
-        icp.add(R.drawable.situp);
-        icp.add(R.drawable.cobrastretch);
-        icp.add(R.drawable.bicyclecrunches);
-        icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.jumpingjacks);
+        icp.add(R.drawable.skipping);
+        icp.add(R.drawable.burpees);
+        icp.add(R.drawable.pushup);
+        icp.add(R.drawable.pushup_rotation);
+        icp.add(R.drawable.triceps_stretch);
+        icp.add(R.drawable.triceps_stretch);
+        icp.add(R.drawable.burpees);
+        icp.add(R.drawable.pushup_rotation);
+        icp.add(R.drawable.punches);
+        icp.add(R.drawable.arm_raises);
     }
 }

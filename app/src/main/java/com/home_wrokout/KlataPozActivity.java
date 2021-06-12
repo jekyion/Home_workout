@@ -81,32 +81,55 @@ public class KlataPozActivity extends AppCompatActivity {
     }
     public void listAddSred(){
         cwp.clear();
-        cwp.add("HEEL TOUCH");
-        cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("LEG RAISES");
-        cwp.add("BUTT BRIDGE");
-        cwp.add("PLANK");
+        cwp.add("JUMPING JACKS");
+        cwp.add("PUSH-UP");
+        cwp.add("WIDE ARM PUSH-UP");
+        cwp.add("HINDU PUSH-UP");
+        cwp.add("PUSH-UP & ROTATION");
+        cwp.add("HINDU PUSH-UP");
+        cwp.add("DECLINE PUSH-UP");
+        cwp.add("SHOULDER STRETCH");
+        cwp.add("COBRA STRETCH");
 
         icp.clear();
-        icp.add(R.drawable.heeltouch);
-        icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.legraises);
-        icp.add(R.drawable.buttbridge);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.jumpingjacks);
+        icp.add(R.drawable.pushup);
+        icp.add(R.drawable.wide_push_up);
+        icp.add(R.drawable.hindu_pushup);
+        icp.add(R.drawable.pushup_rotation);
+        icp.add(R.drawable.hindu_pushup);
+        icp.add(R.drawable.decline_pushup);
+        icp.add(R.drawable.shoulder_stretch);
+        icp.add(R.drawable.cobrastretch);
+
     }
     public void listAddZaw(){
+
         cwp.clear();
-        cwp.add("SIT-UPS");
+        cwp.add("JUMPING JACKS");
+        cwp.add("SHOULDER STRETCH");
+        cwp.add("BURPEES");
+        cwp.add("HINDU PUSH-UP");
+        cwp.add("PUSH-UP & ROTATION");
+        cwp.add("DIAMOND PUSH-UP");
+        cwp.add("HINDU PUSH-UP");
+        cwp.add("DECLINE PUSH-UP");
+        cwp.add("BURPEES");
+        cwp.add("SHOULDER STRETCH");
         cwp.add("COBRA STRETCH");
-        cwp.add("BICYCLE CRUNCHES");
-        cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("PLANK");
 
         icp.clear();
-        icp.add(R.drawable.situp);
+        icp.add(R.drawable.jumpingjacks);
+        icp.add(R.drawable.shoulder_stretch);
+        icp.add(R.drawable.burpees);
+        icp.add(R.drawable.hindu_pushup);
+        icp.add(R.drawable.pushup_rotation);
+        icp.add(R.drawable.diamond_push_up);
+        icp.add(R.drawable.hindu_pushup);
+        icp.add(R.drawable.decline_pushup);
+        icp.add(R.drawable.burpees);
+        icp.add(R.drawable.shoulder_stretch);
         icp.add(R.drawable.cobrastretch);
-        icp.add(R.drawable.bicyclecrunches);
-        icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.plank);
+
     }
 }
