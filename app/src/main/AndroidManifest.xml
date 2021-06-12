@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homewrokout">
-        <activity android:name=".Alarm_RecyclerView.Alarm_add_activity"></activity>
+        <activity android:name=".PlecyPozActivity"></activity>
+        <activity android:name=".NogiPozAzctivity" />
+        <activity android:name=".RamionaPozActivity" />
+        <activity android:name=".KlataPozActivity" />
+        <activity android:name=".Alarm_RecyclerView.Alarm_add_activity" />
         <activity android:name=".ExTimerActivity" />
         <activity android:name=".BrzuchPozActivity" />
         <activity android:name=".TreningiActivity" />
