@@ -33,8 +33,8 @@ public class RaportActivity extends AppCompatActivity {
         wzrostpob=findViewById(R.id.wzrost);
         wagapob=findViewById(R.id.waga);
         SharedPreferences preferences = getSharedPreferences("bmi", MODE_PRIVATE);
-        String waga = preferences.getString("WAGA","1");
-        String wzrost = preferences.getString("WZROST","123" );
+        String waga = preferences.getString("WAGA","70");
+        String wzrost = preferences.getString("WZROST","180" );
         wzrostpob.setText(wzrost);
         wagapob.setText(waga);
         Float x = calculateBMIMetric(Float.valueOf(wzrost),Float.valueOf(waga));
