@@ -36,6 +36,7 @@ public class RaportActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("bmi", MODE_PRIVATE);
         String waga = preferences.getString("WAGA","70");
         String wzrost = preferences.getString("WZROST","180" );
+
         if ((wzrost !=null) || (waga !=null)){
             wzrostpob.setText(wzrost);
             wagapob.setText(waga);
