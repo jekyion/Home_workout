@@ -1,4 +1,4 @@
-package com.home_wrokout;
+package com.home_wrokout.poziom;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,16 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import java.util.ArrayList;
-import android.widget.ImageView;
+
+import com.home_wrokout.ExTimerActivity;
+import com.home_wrokout.R;
 
 import java.util.ArrayList;
 
-public class BrzuchPozActivity extends AppCompatActivity {
+public class PlecyPozActivity extends AppCompatActivity {
+
     private Button pocz;
     private Button sred;
     private Button zaw;
-   // String[] cwp={"1","2","3","4","5"};
+    // String[] cwp={"1","2","3","4","5"};
     private ArrayList<String> cwp = new ArrayList<String>();
     private ArrayList<Integer> icp = new ArrayList<>();
 
@@ -25,12 +27,12 @@ public class BrzuchPozActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_brzuch_poz);
+        setContentView(R.layout.activity_plecy_poz);
 
 
 
 
-        pocz=findViewById(R.id.button8);
+        pocz=findViewById(R.id.plecypocz);
         pocz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +40,7 @@ public class BrzuchPozActivity extends AppCompatActivity {
                 openExTimerActivity();
             }
         });
-        sred=findViewById(R.id.button7);
+        sred=findViewById(R.id.plecysred);
         sred.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +48,7 @@ public class BrzuchPozActivity extends AppCompatActivity {
                 openExTimerActivity();
             }
         });
-        zaw=findViewById(R.id.button6);
+        zaw=findViewById(R.id.plecyzaaw);
         zaw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

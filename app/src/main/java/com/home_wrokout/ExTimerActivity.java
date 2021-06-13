@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.home_wrokout.poziom.BrzuchPozActivity;
+
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 public class ExTimerActivity extends AppCompatActivity {
     private TextView timer;

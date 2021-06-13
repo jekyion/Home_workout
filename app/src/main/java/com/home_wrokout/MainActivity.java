@@ -2,10 +2,13 @@ package com.home_wrokout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.home_wrokout.Alarm_RecyclerView.Alarm_activity;
 
@@ -17,6 +20,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SharedPreferences preferences = getSharedPreferences("bmi", MODE_PRIVATE);
+        String storedPreference = preferences.getString("WAGA","1");
+        String storedPreference2 = preferences.getString("WZROST","123" );
+
+
+
+        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("isFirstRun", true);
+        if (isFirstRun) {
+            //show sign up activity
+            startActivity(new Intent(MainActivity.this, FirstActivity.class));
+            Toast.makeText(MainActivity.this, "Run only once", Toast.LENGTH_LONG)
+                    .show();
+        }
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                .putBoolean("isFirstRun", false).commit();
 
         button=findViewById(R.id.button12);
         plan=findViewById(R.id.button10);

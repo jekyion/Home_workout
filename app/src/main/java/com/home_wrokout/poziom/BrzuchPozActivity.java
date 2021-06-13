@@ -1,4 +1,4 @@
-package com.home_wrokout;
+package com.home_wrokout.poziom;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,15 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import java.util.ArrayList;
+import android.widget.ImageView;
+
+import com.home_wrokout.ExTimerActivity;
+import com.home_wrokout.R;
 
 import java.util.ArrayList;
 
-public class KlataPozActivity extends AppCompatActivity {
-
+public class BrzuchPozActivity extends AppCompatActivity {
     private Button pocz;
     private Button sred;
     private Button zaw;
-    // String[] cwp={"1","2","3","4","5"};
+   // String[] cwp={"1","2","3","4","5"};
     private ArrayList<String> cwp = new ArrayList<String>();
     private ArrayList<Integer> icp = new ArrayList<>();
 
@@ -24,12 +28,12 @@ public class KlataPozActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_klata_poz);
+        setContentView(R.layout.activity_brzuch_poz);
 
 
 
 
-        pocz=findViewById(R.id.klatapocz);
+        pocz=findViewById(R.id.button8);
         pocz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +41,7 @@ public class KlataPozActivity extends AppCompatActivity {
                 openExTimerActivity();
             }
         });
-        sred=findViewById(R.id.klatasred);
+        sred=findViewById(R.id.button7);
         sred.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +49,7 @@ public class KlataPozActivity extends AppCompatActivity {
                 openExTimerActivity();
             }
         });
-        zaw=findViewById(R.id.klatazaaw);
+        zaw=findViewById(R.id.button6);
         zaw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,55 +85,32 @@ public class KlataPozActivity extends AppCompatActivity {
     }
     public void listAddSred(){
         cwp.clear();
-        cwp.add("JUMPING JACKS");
-        cwp.add("PUSH-UP");
-        cwp.add("WIDE ARM PUSH-UP");
-        cwp.add("HINDU PUSH-UP");
-        cwp.add("PUSH-UP & ROTATION");
-        cwp.add("HINDU PUSH-UP");
-        cwp.add("DECLINE PUSH-UP");
-        cwp.add("SHOULDER STRETCH");
-        cwp.add("COBRA STRETCH");
+        cwp.add("HEEL TOUCH");
+        cwp.add("MOUNTAIN CLIMBER");
+        cwp.add("LEG RAISES");
+        cwp.add("BUTT BRIDGE");
+        cwp.add("PLANK");
 
         icp.clear();
-        icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.pushup);
-        icp.add(R.drawable.wide_push_up);
-        icp.add(R.drawable.hindu_pushup);
-        icp.add(R.drawable.pushup_rotation);
-        icp.add(R.drawable.hindu_pushup);
-        icp.add(R.drawable.decline_pushup);
-        icp.add(R.drawable.shoulder_stretch);
-        icp.add(R.drawable.cobrastretch);
-
+        icp.add(R.drawable.heeltouch);
+        icp.add(R.drawable.mountainclimber);
+        icp.add(R.drawable.legraises);
+        icp.add(R.drawable.buttbridge);
+        icp.add(R.drawable.plank);
     }
     public void listAddZaw(){
-
         cwp.clear();
-        cwp.add("JUMPING JACKS");
-        cwp.add("SHOULDER STRETCH");
-        cwp.add("BURPEES");
-        cwp.add("HINDU PUSH-UP");
-        cwp.add("PUSH-UP & ROTATION");
-        cwp.add("DIAMOND PUSH-UP");
-        cwp.add("HINDU PUSH-UP");
-        cwp.add("DECLINE PUSH-UP");
-        cwp.add("BURPEES");
-        cwp.add("SHOULDER STRETCH");
+        cwp.add("SIT-UPS");
         cwp.add("COBRA STRETCH");
+        cwp.add("BICYCLE CRUNCHES");
+        cwp.add("ABDOMINAL CRUNCHES");
+        cwp.add("PLANK");
 
         icp.clear();
-        icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.shoulder_stretch);
-        icp.add(R.drawable.burpees);
-        icp.add(R.drawable.hindu_pushup);
-        icp.add(R.drawable.pushup_rotation);
-        icp.add(R.drawable.diamond_push_up);
-        icp.add(R.drawable.hindu_pushup);
-        icp.add(R.drawable.decline_pushup);
-        icp.add(R.drawable.burpees);
-        icp.add(R.drawable.shoulder_stretch);
+        icp.add(R.drawable.situp);
         icp.add(R.drawable.cobrastretch);
-
+        icp.add(R.drawable.bicyclecrunches);
+        icp.add(R.drawable.abdominalcrunches);
+        icp.add(R.drawable.plank);
     }
 }

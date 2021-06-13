@@ -7,6 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.home_wrokout.poziom.BrzuchPozActivity;
+import com.home_wrokout.poziom.KlataPozActivity;
+import com.home_wrokout.poziom.NogiPozAzctivity;
+import com.home_wrokout.poziom.PlecyPozActivity;
+import com.home_wrokout.poziom.RamionaPozActivity;
+
 public class TreningiActivity extends AppCompatActivity {
     private Button brzuch;
     private Button klata;
@@ -55,21 +61,21 @@ public class TreningiActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openKlataPozActivity(){
-        Intent intent = new Intent(this,KlataPozActivity.class);
+        Intent intent = new Intent(this, KlataPozActivity.class);
         startActivity(intent);
     }
     public void openRamionaPozActivity(){
-        Intent intent = new Intent(this,RamionaPozActivity.class);
+        Intent intent = new Intent(this, RamionaPozActivity.class);
         startActivity(intent);
     }
 
     public void openNogiPozActivity(){
-        Intent intent = new Intent(this,NogiPozAzctivity.class);
+        Intent intent = new Intent(this, NogiPozAzctivity.class);
         startActivity(intent);
     }
 
     public void openPlecyPozActivity(){
-        Intent intent = new Intent(this,PlecyPozActivity.class);
+        Intent intent = new Intent(this, PlecyPozActivity.class);
         startActivity(intent);
     }
 }
