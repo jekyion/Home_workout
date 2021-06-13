@@ -32,15 +32,17 @@ public class RaportActivity extends AppCompatActivity {
         policz=findViewById(R.id.policz);
         wzrostpob=findViewById(R.id.wzrost);
         wagapob=findViewById(R.id.waga);
+
         SharedPreferences preferences = getSharedPreferences("bmi", MODE_PRIVATE);
         String waga = preferences.getString("WAGA","70");
         String wzrost = preferences.getString("WZROST","180" );
-        wzrostpob.setText(wzrost);
-        wagapob.setText(waga);
-        Float x = calculateBMIMetric(Float.valueOf(wzrost),Float.valueOf(waga));
-        bmi.setText(String.format("%.2f",x));
-        kat.setText(classifyBMI(x));
-
+        if ((wzrost !=null) || (waga !=null)){
+            wzrostpob.setText(wzrost);
+            wagapob.setText(waga);
+            Float x = calculateBMIMetric(Float.valueOf(wzrost), Float.valueOf(waga));
+            bmi.setText(String.format("%.2f", x));
+            kat.setText(classifyBMI(x));
+        }
         policz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
