@@ -26,16 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-                .getBoolean("isFirstRun", true);
+        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("isFirstRun", true);
         if (isFirstRun) {
-            //show sign up activity
             startActivity(new Intent(MainActivity.this, FirstActivity.class));
-            Toast.makeText(MainActivity.this, "Run only once", Toast.LENGTH_LONG)
-                    .show();
         }
-        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-                .putBoolean("isFirstRun", false).commit();
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("isFirstRun", false).commit();
 
         button=findViewById(R.id.button12);
         plan=findViewById(R.id.button10);
