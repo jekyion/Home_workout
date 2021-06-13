@@ -105,7 +105,7 @@ public class Alarm_add_activity extends AppCompatActivity implements TimePickerD
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
         TextView textView = findViewById(R.id.textView_godzina);
         if ( minute < 10 )
-            textView.setText(hourOfDay+":"+minute+"0");
+            textView.setText(hourOfDay+":0"+minute);
         else
             textView.setText(hourOfDay+":"+minute);
         this.hour = hourOfDay;
