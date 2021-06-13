@@ -70,46 +70,56 @@ public class PlecyPozActivity extends AppCompatActivity {
     public void listAddPocz(){
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("HEEL TOUCH");
-        cwp.add("PLANK");
+        cwp.add("ARM RAISES");
+        cwp.add("KNEE PUSH_UP");
+        cwp.add("ARM SCISSORS");
+        cwp.add("CAT COW POSE");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.heeltouch);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.arm_raises);
+        icp.add(R.drawable.knee_pushup);
+        icp.add(R.drawable.arm_scissors);
+        icp.add(R.drawable.cat_cow);
     }
     public void listAddSred(){
         cwp.clear();
-        cwp.add("HEEL TOUCH");
-        cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("LEG RAISES");
-        cwp.add("BUTT BRIDGE");
-        cwp.add("PLANK");
+        cwp.add("JUMPING JACKS");
+        cwp.add("INCLINE PUSH-UP");
+        cwp.add("CAT COW POSE");
+        cwp.add("INCLINE PUSH-UP");
+        cwp.add("SUPERMAN");
+        cwp.add("CAT COW POSE");
+        cwp.add("CHILD'S POSE");
 
         icp.clear();
-        icp.add(R.drawable.heeltouch);
-        icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.legraises);
-        icp.add(R.drawable.buttbridge);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.jumpingjacks);
+        icp.add(R.drawable.incline_pushup);
+        icp.add(R.drawable.cat_cow);
+        icp.add(R.drawable.incline_pushup);
+        icp.add(R.drawable.superman);
+        icp.add(R.drawable.cat_cow);
+        icp.add(R.drawable.child_pose);
     }
     public void listAddZaw(){
         cwp.clear();
-        cwp.add("SIT-UPS");
-        cwp.add("COBRA STRETCH");
-        cwp.add("BICYCLE CRUNCHES");
-        cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("PLANK");
+        cwp.add("JUMPING JACKS");
+        cwp.add("INCLINE PUSH-UP");
+        cwp.add("CAT COW POSE");
+        cwp.add("INCLINE PUSH-UP");
+        cwp.add("SUPERMAN");
+        cwp.add("CAT COW POSE");
+        cwp.add("SUPERMAN");
+        cwp.add("CHILD'S POSE");
 
         icp.clear();
-        icp.add(R.drawable.situp);
-        icp.add(R.drawable.cobrastretch);
-        icp.add(R.drawable.bicyclecrunches);
-        icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.jumpingjacks);
+        icp.add(R.drawable.incline_pushup);
+        icp.add(R.drawable.cat_cow);
+        icp.add(R.drawable.incline_pushup);
+        icp.add(R.drawable.superman);
+        icp.add(R.drawable.cat_cow);
+        icp.add(R.drawable.superman);
+        icp.add(R.drawable.child_pose);
     }
 }

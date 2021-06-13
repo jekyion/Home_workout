@@ -15,14 +15,14 @@ import com.home_wrokout.Alarm_RecyclerView.Alarm_activity;
 public class MainActivity extends AppCompatActivity {
     private Button button;
     private Button plan;
+    private Button raport;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SharedPreferences preferences = getSharedPreferences("bmi", MODE_PRIVATE);
-        String storedPreference = preferences.getString("WAGA","1");
-        String storedPreference2 = preferences.getString("WZROST","123" );
+
 
 
 
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         button=findViewById(R.id.button12);
         plan=findViewById(R.id.button10);
+        raport=findViewById(R.id.button13);
         plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
                openTreningiActivity();
             }
         });
+
+        raport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRaportActivity();
+            }
+        });
     }
     public void openTreningiActivity(){
         Intent intent = new Intent(this, TreningiActivity.class);
@@ -53,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openAlarm_activity(){
         Intent intent = new Intent(this, Alarm_activity.class);
+        startActivity(intent);
+    }
+    public void openRaportActivity(){
+        Intent intent = new Intent(this, RaportActivity.class);
         startActivity(intent);
     }
 

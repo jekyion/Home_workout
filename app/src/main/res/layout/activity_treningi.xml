@@ -14,6 +14,7 @@
         android:text="Ramiona"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.502" />
@@ -26,6 +27,7 @@
         android:text="Nogi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.684" />
@@ -40,6 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#ffffff"
         app:layout_constraintVertical_bias="0.866" />
 
     <Button
@@ -48,6 +51,7 @@
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
         android:text="Klatka piersiowa"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +63,7 @@
         android:layout_width="335dp"
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
+        android:textColor="#ffffff"
         android:text="Mięśnie brzucha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

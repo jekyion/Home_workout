@@ -12,23 +12,14 @@
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
         android:text="Plan ćwiczeń"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.502" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="335dp"
-        android:layout_height="76dp"
-        android:background="@drawable/mybutton1"
-        android:text="Ustawienia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+
 
     <Button
         android:id="@+id/button12"
@@ -36,6 +27,7 @@
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
         android:text="Treningi"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,9 +37,11 @@
     <Button
         android:id="@+id/button13"
         android:layout_width="335dp"
+
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
         android:text="Raport"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

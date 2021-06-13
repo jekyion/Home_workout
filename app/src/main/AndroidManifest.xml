@@ -9,9 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homewrokout">
-        <activity android:name=".FirstActivity">
-
-        </activity>
+        <activity android:name=".RaportActivity"></activity>
+        <activity android:name=".FirstActivity"></activity>
         <activity android:name=".poziom.PlecyPozActivity" />
         <activity android:name=".poziom.NogiPozAzctivity" />
         <activity android:name=".poziom.RamionaPozActivity" />

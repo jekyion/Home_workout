@@ -27,12 +27,12 @@ public class FirstActivity extends AppCompatActivity {
 
         dalej.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {saveEmail(wzrost,waga);openMainPozActivity();}
+            public void onClick(View view) {saveBMI(wzrost,waga);openMainPozActivity();}
 
 
         });
     }
-    public void saveEmail(EditText wzrost, EditText waga) {
+    public void saveBMI(EditText wzrost, EditText waga) {
         SharedPreferences sharedPref = getSharedPreferences("bmi", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("WZROST", wzrost.getText().toString());

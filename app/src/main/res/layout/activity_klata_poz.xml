@@ -12,6 +12,7 @@
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
         android:text="Klatka piersiowa \n Zaawansowany"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,6 +21,7 @@
 
     <Button
         android:id="@+id/klatasred"
+        android:textColor="#ffffff"
         android:layout_width="335dp"
         android:layout_height="76dp"
         android:background="@drawable/mybutton1"
@@ -34,6 +36,7 @@
         android:id="@+id/klatapocz"
         android:layout_width="335dp"
         android:layout_height="76dp"
+        android:textColor="#ffffff"
         android:background="@drawable/mybutton1"
         android:text="Klatka piersiowa \n Początkujący"
         app:layout_constraintBottom_toBottomOf="parent"
