@@ -100,7 +100,7 @@ public class Alarm_activity extends AppCompatActivity {
             tableCollectionInteger.add(index);
             Intent intent = new Intent(this, AlertReciver.class);
             PendingIntent pendingIntent = PendingIntent.getBroadcast(this, index, intent, 0);
-            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 5 * 1000, pendingIntent);
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 1000 * 60 * 60 * 24, pendingIntent);
             takenIndexList.add(index);
         }
         item.setTakenSlots(takenIndexList);
