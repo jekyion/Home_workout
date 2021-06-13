@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homewrokout">
+        <receiver  android:process=":remote" android:name=".Alarm_RecyclerView.AlertReciver"></receiver>
         <activity android:name=".RaportActivity"></activity>
         <activity android:name=".FirstActivity"></activity>
         <activity android:name=".poziom.PlecyPozActivity" />

@@ -21,4 +21,8 @@ public class Alarm_ItemCollector {
     public ArrayList<RecyclerView_Item> getList() {
         return list;
     }
+
+    public RecyclerView_Item getItem(int position){ return list.get(position); }
+
+    public void setItem(int position, RecyclerView_Item item){ list.set(position, item); }
 }
