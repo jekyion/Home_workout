@@ -73,7 +73,7 @@ public class RamionaPozActivity extends AppCompatActivity {
         cwp.add("ARM RAISES");
         cwp.add("DIAMOND PUSH-UPS");
         cwp.add("PUNCHES");
-        cwp.add("WALL PUSH_UPS");
+        cwp.add("WALL PUSH-UPS");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
@@ -87,7 +87,7 @@ public class RamionaPozActivity extends AppCompatActivity {
         cwp.add("JUMPING JACKS");
         cwp.add("PUSH-UPS");
         cwp.add("PUSH UPS & ROTATION");
-        cwp.add("DIAMOND PUSH_UPS");
+        cwp.add("DIAMOND PUSH-UPS");
         cwp.add("BURPEES");
         cwp.add("PUSH-UPS");
         cwp.add("ARM SCISSORS");
