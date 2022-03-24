@@ -1,4 +1,4 @@
-package com.home_wrokout.poziom;
+package com.home_wrokout.Level;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ import com.home_wrokout.R;
 
 import java.util.ArrayList;
 
-public class RamionaPozActivity extends AppCompatActivity {
+public class ChestActivity extends AppCompatActivity {
 
     private Button pocz;
     private Button sred;
@@ -27,12 +27,12 @@ public class RamionaPozActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ramiona_poz);
+        setContentView(R.layout.activity_klata_poz);
 
 
 
 
-        pocz=findViewById(R.id.ramionapocz);
+        pocz=findViewById(R.id.klatapocz);
         pocz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +40,7 @@ public class RamionaPozActivity extends AppCompatActivity {
                 openExTimerActivity();
             }
         });
-        sred=findViewById(R.id.ramionasred);
+        sred=findViewById(R.id.klatasred);
         sred.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +48,7 @@ public class RamionaPozActivity extends AppCompatActivity {
                 openExTimerActivity();
             }
         });
-        zaw=findViewById(R.id.ramionazaaw);
+        zaw=findViewById(R.id.klatazaaw);
         zaw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,62 +70,69 @@ public class RamionaPozActivity extends AppCompatActivity {
     public void listAddPocz(){
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("ARM RAISES");
-        cwp.add("DIAMOND PUSH-UPS");
-        cwp.add("PUNCHES");
-        cwp.add("WALL PUSH-UPS");
+        cwp.add("ABDOMINAL CRUNCHES");
+        cwp.add("MOUNTAIN CLIMBER");
+        cwp.add("HEEL TOUCH");
+        cwp.add("PLANK");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.arm_raises);
-        icp.add(R.drawable.diamond_push_up);
-        icp.add(R.drawable.punches);
-        icp.add(R.drawable.wall_push_up);
+        icp.add(R.drawable.abdominalcrunches);
+        icp.add(R.drawable.mountainclimber);
+        icp.add(R.drawable.heeltouch);
+        icp.add(R.drawable.plank);
     }
     public void listAddSred(){
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("PUSH-UPS");
-        cwp.add("PUSH UPS & ROTATION");
-        cwp.add("DIAMOND PUSH-UPS");
-        cwp.add("BURPEES");
-        cwp.add("PUSH-UPS");
-        cwp.add("ARM SCISSORS");
+        cwp.add("PUSH-UP");
+        cwp.add("WIDE ARM PUSH-UP");
+        cwp.add("HINDU PUSH-UP");
+        cwp.add("PUSH-UP & ROTATION");
+        cwp.add("HINDU PUSH-UP");
+        cwp.add("DECLINE PUSH-UP");
+        cwp.add("SHOULDER STRETCH");
+        cwp.add("COBRA STRETCH");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
         icp.add(R.drawable.pushup);
+        icp.add(R.drawable.wide_push_up);
+        icp.add(R.drawable.hindu_pushup);
         icp.add(R.drawable.pushup_rotation);
-        icp.add(R.drawable.diamond_push_up);
-        icp.add(R.drawable.burpees);
-        icp.add(R.drawable.pushup);
-        icp.add(R.drawable.arm_scissors);
+        icp.add(R.drawable.hindu_pushup);
+        icp.add(R.drawable.decline_pushup);
+        icp.add(R.drawable.shoulder_stretch);
+        icp.add(R.drawable.cobrastretch);
+
     }
     public void listAddZaw(){
+
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("SKIPPING WITHOUT ROPE");
-        cwp.add("BURPESS");
-        cwp.add("PUSH-UPS");
-        cwp.add("PUSH UPS & ROTATION");
-        cwp.add("TRICEPS STRETCH LEFT");
-        cwp.add("TRICEPS STRETCH RIGHT");
-        cwp.add("BURPESS");
-        cwp.add("PUSH UPS & ROTATION");
-        cwp.add("PUNCHES");
-        cwp.add("ARM RAISES");
+        cwp.add("SHOULDER STRETCH");
+        cwp.add("BURPEES");
+        cwp.add("HINDU PUSH-UP");
+        cwp.add("PUSH-UP & ROTATION");
+        cwp.add("DIAMOND PUSH-UP");
+        cwp.add("HINDU PUSH-UP");
+        cwp.add("DECLINE PUSH-UP");
+        cwp.add("BURPEES");
+        cwp.add("SHOULDER STRETCH");
+        cwp.add("COBRA STRETCH");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.skipping);
+        icp.add(R.drawable.shoulder_stretch);
         icp.add(R.drawable.burpees);
-        icp.add(R.drawable.pushup);
+        icp.add(R.drawable.hindu_pushup);
         icp.add(R.drawable.pushup_rotation);
-        icp.add(R.drawable.triceps_stretch);
-        icp.add(R.drawable.triceps_stretch);
+        icp.add(R.drawable.diamond_push_up);
+        icp.add(R.drawable.hindu_pushup);
+        icp.add(R.drawable.decline_pushup);
         icp.add(R.drawable.burpees);
-        icp.add(R.drawable.pushup_rotation);
-        icp.add(R.drawable.punches);
-        icp.add(R.drawable.arm_raises);
+        icp.add(R.drawable.shoulder_stretch);
+        icp.add(R.drawable.cobrastretch);
+
     }
 }

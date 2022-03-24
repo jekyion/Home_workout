@@ -2,20 +2,17 @@ package com.home_wrokout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.home_wrokout.Alarm_RecyclerView.Alarm_activity;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
     private Button plan;
-    private Button raport;
+    private Button report;
 
 
     @Override
@@ -34,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         button=findViewById(R.id.button12);
         plan=findViewById(R.id.button10);
-        raport=findViewById(R.id.button13);
+        report =findViewById(R.id.button13);
         plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        raport.setOnClickListener(new View.OnClickListener() {
+        report.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openRaportActivity();
@@ -56,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openTreningiActivity(){
-        Intent intent = new Intent(this, TreningiActivity.class);
+        Intent intent = new Intent(this, TreningActivity.class);
         startActivity(intent);
     }
     public void openAlarm_activity(){
@@ -64,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openRaportActivity(){
-        Intent intent = new Intent(this, RaportActivity.class);
+        Intent intent = new Intent(this, ReportActivity.class);
         startActivity(intent);
     }
 

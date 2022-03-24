@@ -1,4 +1,4 @@
-package com.home_wrokout.poziom;
+package com.home_wrokout.Level;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ import com.home_wrokout.R;
 
 import java.util.ArrayList;
 
-public class NogiPozAzctivity extends AppCompatActivity {
+public class LegsAzctivity extends AppCompatActivity {
 
     private Button pocz;
     private Button sred;

@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class RaportActivity extends AppCompatActivity {
+public class ReportActivity extends AppCompatActivity {
     public static final String BMI_CATEGORY_UNDERWEIGHT = "Niedowaga";
     public static final String BMI_CATEGORY_HEALTHY = "Waga prawidłowa";
     public static final String BMI_CATEGORY_OVERWEIGHT = "Nadwaga";

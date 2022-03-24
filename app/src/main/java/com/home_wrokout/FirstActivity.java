@@ -10,33 +10,31 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.home_wrokout.poziom.BrzuchPozActivity;
-
 public class FirstActivity extends AppCompatActivity {
-    EditText wzrost;
-    EditText waga;
-    Button dalej;
+    EditText height;
+    EditText weight;
+    Button next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
-        wzrost=findViewById(R.id.wzrost);
-        waga=findViewById(R.id.waga);
-        dalej=findViewById(R.id.lol);
+        height =findViewById(R.id.wzrost);
+        weight =findViewById(R.id.waga);
+        next =findViewById(R.id.lol);
 
 
-        dalej.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {saveBMI(wzrost,waga);openMainPozActivity();}
+            public void onClick(View view) {saveBMI(height, weight);openMainPozActivity();}
 
 
         });
     }
-    public void saveBMI(EditText wzrost, EditText waga) {
+    public void saveBMI(EditText height, EditText weight) {
         SharedPreferences sharedPref = getSharedPreferences("bmi", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("WZROST", wzrost.getText().toString());
-        editor.putString("WAGA", waga.getText().toString());
+        editor.putString("WZROST", height.getText().toString());
+        editor.putString("WAGA", weight.getText().toString());
         editor.apply();
     }
     public void openMainPozActivity(){

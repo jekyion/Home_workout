@@ -1,4 +1,4 @@
-package com.home_wrokout.poziom;
+package com.home_wrokout.Level;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,14 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import java.util.ArrayList;
-import android.widget.ImageView;
 
 import com.home_wrokout.ExTimerActivity;
 import com.home_wrokout.R;
 
-import java.util.ArrayList;
-
-public class BrzuchPozActivity extends AppCompatActivity {
+public class AbsActivity extends AppCompatActivity {
     private Button pocz;
     private Button sred;
     private Button zaw;

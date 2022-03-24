@@ -8,7 +8,7 @@ import android.os.CountDownTimer;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.home_wrokout.poziom.BrzuchPozActivity;
+import com.home_wrokout.Level.AbsActivity;
 
 import java.util.ArrayList;
 
@@ -16,14 +16,12 @@ public class ExTimerActivity extends AppCompatActivity {
     private TextView timer;
     private TextView exc;
     private ImageView iv;
-   // int images[]={R.drawable.pushup,R.drawable.mountainclimber,R.drawable.fire,R.drawable.fire,R.drawable.fire};
     private boolean isBreak=true;
     private CountDownTimer cTimer = null;
     private int i=0;
     private ArrayList<String> cwp;
     private ArrayList<Integer> icp;
 
-    //String[] cwp=b.getStringArray("cwp");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +76,7 @@ public class ExTimerActivity extends AppCompatActivity {
         ;
     }
     public void openBrzuchPozActivity(){
-        Intent intent = new Intent(this, BrzuchPozActivity.class);
+        Intent intent = new Intent(this, AbsActivity.class);
         startActivity(intent);
     }
     protected void onStop() {

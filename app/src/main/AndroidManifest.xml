@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homewrokout">
         <receiver  android:process=":remote" android:name=".Alarm_RecyclerView.AlertReciver"></receiver>
-        <activity android:name=".RaportActivity"></activity>
+        <activity android:name=".ReportActivity"></activity>
         <activity android:name=".FirstActivity"></activity>
-        <activity android:name=".poziom.PlecyPozActivity" />
-        <activity android:name=".poziom.NogiPozAzctivity" />
-        <activity android:name=".poziom.RamionaPozActivity" />
-        <activity android:name=".poziom.KlataPozActivity" />
+        <activity android:name=".Level.BackActivity" />
+        <activity android:name=".Level.LegsAzctivity" />
+        <activity android:name=".Level.ArmsActivity" />
+        <activity android:name=".Level.ChestActivity" />
         <activity android:name=".Alarm_RecyclerView.Alarm_add_activity" />
         <activity android:name=".ExTimerActivity" />
-        <activity android:name=".poziom.BrzuchPozActivity" />
-        <activity android:name=".TreningiActivity" />
+        <activity android:name=".Level.AbsActivity" />
+        <activity android:name=".TreningActivity" />
         <activity android:name=".Alarm_RecyclerView.Alarm_activity" />
         <activity android:name=".MainActivity">
             <intent-filter>

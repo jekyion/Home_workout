@@ -1,4 +1,4 @@
-package com.home_wrokout.poziom;
+package com.home_wrokout.Level;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ import com.home_wrokout.R;
 
 import java.util.ArrayList;
 
-public class KlataPozActivity extends AppCompatActivity {
+public class BackActivity extends AppCompatActivity {
 
     private Button pocz;
     private Button sred;
@@ -27,12 +27,12 @@ public class KlataPozActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_klata_poz);
+        setContentView(R.layout.activity_plecy_poz);
 
 
 
 
-        pocz=findViewById(R.id.klatapocz);
+        pocz=findViewById(R.id.plecypocz);
         pocz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +40,7 @@ public class KlataPozActivity extends AppCompatActivity {
                 openExTimerActivity();
             }
         });
-        sred=findViewById(R.id.klatasred);
+        sred=findViewById(R.id.plecysred);
         sred.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +48,7 @@ public class KlataPozActivity extends AppCompatActivity {
                 openExTimerActivity();
             }
         });
-        zaw=findViewById(R.id.klatazaaw);
+        zaw=findViewById(R.id.plecyzaaw);
         zaw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,69 +70,56 @@ public class KlataPozActivity extends AppCompatActivity {
     public void listAddPocz(){
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("ABDOMINAL CRUNCHES");
-        cwp.add("MOUNTAIN CLIMBER");
-        cwp.add("HEEL TOUCH");
-        cwp.add("PLANK");
+        cwp.add("ARM RAISES");
+        cwp.add("KNEE PUSH_UP");
+        cwp.add("ARM SCISSORS");
+        cwp.add("CAT COW POSE");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.abdominalcrunches);
-        icp.add(R.drawable.mountainclimber);
-        icp.add(R.drawable.heeltouch);
-        icp.add(R.drawable.plank);
+        icp.add(R.drawable.arm_raises);
+        icp.add(R.drawable.knee_pushup);
+        icp.add(R.drawable.arm_scissors);
+        icp.add(R.drawable.cat_cow);
     }
     public void listAddSred(){
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("PUSH-UP");
-        cwp.add("WIDE ARM PUSH-UP");
-        cwp.add("HINDU PUSH-UP");
-        cwp.add("PUSH-UP & ROTATION");
-        cwp.add("HINDU PUSH-UP");
-        cwp.add("DECLINE PUSH-UP");
-        cwp.add("SHOULDER STRETCH");
-        cwp.add("COBRA STRETCH");
+        cwp.add("INCLINE PUSH-UP");
+        cwp.add("CAT COW POSE");
+        cwp.add("INCLINE PUSH-UP");
+        cwp.add("SUPERMAN");
+        cwp.add("CAT COW POSE");
+        cwp.add("CHILD'S POSE");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.pushup);
-        icp.add(R.drawable.wide_push_up);
-        icp.add(R.drawable.hindu_pushup);
-        icp.add(R.drawable.pushup_rotation);
-        icp.add(R.drawable.hindu_pushup);
-        icp.add(R.drawable.decline_pushup);
-        icp.add(R.drawable.shoulder_stretch);
-        icp.add(R.drawable.cobrastretch);
-
+        icp.add(R.drawable.incline_pushup);
+        icp.add(R.drawable.cat_cow);
+        icp.add(R.drawable.incline_pushup);
+        icp.add(R.drawable.superman);
+        icp.add(R.drawable.cat_cow);
+        icp.add(R.drawable.child_pose);
     }
     public void listAddZaw(){
-
         cwp.clear();
         cwp.add("JUMPING JACKS");
-        cwp.add("SHOULDER STRETCH");
-        cwp.add("BURPEES");
-        cwp.add("HINDU PUSH-UP");
-        cwp.add("PUSH-UP & ROTATION");
-        cwp.add("DIAMOND PUSH-UP");
-        cwp.add("HINDU PUSH-UP");
-        cwp.add("DECLINE PUSH-UP");
-        cwp.add("BURPEES");
-        cwp.add("SHOULDER STRETCH");
-        cwp.add("COBRA STRETCH");
+        cwp.add("INCLINE PUSH-UP");
+        cwp.add("CAT COW POSE");
+        cwp.add("INCLINE PUSH-UP");
+        cwp.add("SUPERMAN");
+        cwp.add("CAT COW POSE");
+        cwp.add("SUPERMAN");
+        cwp.add("CHILD'S POSE");
 
         icp.clear();
         icp.add(R.drawable.jumpingjacks);
-        icp.add(R.drawable.shoulder_stretch);
-        icp.add(R.drawable.burpees);
-        icp.add(R.drawable.hindu_pushup);
-        icp.add(R.drawable.pushup_rotation);
-        icp.add(R.drawable.diamond_push_up);
-        icp.add(R.drawable.hindu_pushup);
-        icp.add(R.drawable.decline_pushup);
-        icp.add(R.drawable.burpees);
-        icp.add(R.drawable.shoulder_stretch);
-        icp.add(R.drawable.cobrastretch);
-
+        icp.add(R.drawable.incline_pushup);
+        icp.add(R.drawable.cat_cow);
+        icp.add(R.drawable.incline_pushup);
+        icp.add(R.drawable.superman);
+        icp.add(R.drawable.cat_cow);
+        icp.add(R.drawable.superman);
+        icp.add(R.drawable.child_pose);
     }
 }
